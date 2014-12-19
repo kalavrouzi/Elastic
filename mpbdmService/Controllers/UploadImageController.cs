@@ -68,7 +68,8 @@ namespace mpbdmService.Controllers
                 //}
                 ////////////////////////////
                 // UPDATE imageUrl of user
-                userEntity.ImageUrl = url;
+                //userEntity.ImageUrl = url;
+                userEntity.ImageUrl = newBlob.Name.ToString();
 
                 try
                 {
@@ -143,7 +144,8 @@ namespace mpbdmService.Controllers
                 //    oldBlob.Delete();
                 //}
                 ////////////////////////////
-                contact.ImageUrl = url;
+                //contact.ImageUrl = url;
+                contact.ImageUrl = newBlob.Name.ToString();
 
                 try
                 {
